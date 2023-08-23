@@ -29,7 +29,6 @@ public class Main {
         int medicIndex = 3;
         int healingAmount = 30;
         if (heroesHealth[medicIndex] > 0 && heroesHealth[medicIndex] < 100) {
-            // Ищем первого члена команды с наименьшим здоровьем, но не меньше 0
             int minHealthIndex = -1;
             for (int i = 0; i < heroesHealth.length; i++) {
                 if (i != medicIndex && heroesHealth[i] > 0 && (minHealthIndex == -1 || heroesHealth[i] < heroesHealth[minHealthIndex])) {
